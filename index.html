@@ -1905,7 +1905,7 @@
     <p class="section-desc fade-in">Open to conversations about new opportunities, speaking engagements, advisory work, and collaborations in sports, data, and beyond.</p>
     <div class="contact-links fade-in">
       <a href="https://www.linkedin.com/in/matthew-kyle-37770398/" target="_blank" class="contact-link primary">LinkedIn →</a>
-      <a href="/cdn-cgi/l/email-protection#9cf1fde8e8f4f9ebfdf7e5f0f9dcfbf1fdf5f0b2fff3f1" class="contact-link">Email</a>
+      <a href="/cdn-cgi/l/email-protection#1a777b6e6e727f6d7b7163767f5a7d777b737634797577" class="contact-link">Email</a>
     </div>
   </div>
 </section>
@@ -1962,4 +1962,11 @@ function navLightbox(dir) {
 
 document.addEventListener('keydown', (e) => {
   if (!lightbox.classList.contains('active')) return;
-  if (e.key === 'Escape') { lightbox.classList.remove('active'); documen
+  if (e.key === 'Escape') { lightbox.classList.remove('active'); document.body.style.overflow = ''; }
+  if (e.key === 'ArrowLeft') navLightbox(-1);
+  if (e.key === 'ArrowRight') navLightbox(1);
+});
+</script>
+
+</body>
+</html>
